@@ -1,0 +1,17 @@
+<form>
+    <div class="formitem">
+        Name: <input type="text" name="name" [(ngModel)]="formData.name"/>
+    </div>
+    <div class="formitem">
+        Price: <input type="text" name="price"  [(ngModel)]="formData.price"/>
+    </div>
+    <div class="formitem">
+        Quantity <input type="text" name="qty"  [(ngModel)]="formData.quantity"/>
+    </div>
+    <div class="formitem">
+        Expiry <input type="text" name="exp"  [(ngModel)]="formData.expiryDate" readonly/>{{today | date:"MMM dd, yyyy"}}
+    </div>
+    <div class="formitem">
+        <button class="updateButton" (click)="editData()">Update</button>
+    </div>
+</form>

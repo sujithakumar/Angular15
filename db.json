@@ -1,0 +1,39 @@
+{
+  "fruits": [
+    {
+      "id": "1",
+      "price": "90",
+      "quantity": "3",
+      "name": "Apple",
+      "expiryDate":"2025/11/12"
+    },
+    {
+      "id": "2",
+      "price": "100",
+      "quantity": "3",
+      "name": "Papaya",
+      "expiryDate":"2025/11/12"
+    },
+    {
+      "id": "3",
+      "price": "400",
+      "quantity": "100",
+      "name": "Mango",
+      "expiryDate":"2025/11/12"
+    },
+    {
+      "id": "4",
+      "price": "100",
+      "quantity": "3000",
+      "name": "Banana",
+      "expiryDate":"2025/11/12"
+    },
+    {
+      "id": "5",
+      "price": 0,
+      "quantity": "90",
+      "name": "Melon",
+      "expiryDate":"2025/11/13"
+    }
+  ]
+}
