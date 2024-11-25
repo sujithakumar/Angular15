@@ -1,0 +1,53 @@
+<h3>Search and RXJS operations</h3>
+
+<div class="search">
+    <input type="textbox" placeholder="enter search value" value=""
+    [(ngModel)]="searchTerm"
+    (keypress)="search()"
+     name="searchTerm" 
+     appUppercase>
+
+     <button (click)="forkjoin()">ForkJoin</button>
+
+     <button (click)="combineLatest()">combineLatest</button>
+
+     <button (click)="DistinctUntilChanged()">DistinctUntilChanged</button>
+   
+     <br>
+
+     <div *ngIf="showForks">
+        <pre>
+            {{fork|json}}
+        </pre>
+        <pre>
+            {{fork1|json}}
+        </pre>
+        <pre>
+            {{fork2|json}}
+        </pre>
+        <pre>
+            {{mySerchResults | json}}
+        </pre>
+     </div>
+
+     <br>
+     check console for values
+
+  <div class="search">
+    <br>
+    <br>
+    <h5>My values</h5>
+    <h2>Generated using from ,Arr inp: {{myFromObservable | async}}</h2>
+    <h2>Generated using from ,string inp: {{myFromObservable | async}}</h2>
+    <h2>Generated using of: {{myOfObservable |async}}</h2>
+    <br>
+    <h2>Generated using interval: {{subs}}</h2>
+    <br>
+    <h5>Maps</h5>
+    <h5>MAP returns a observable , which needs to be subscribed again : {{mapData | json}}</h5>
+    <h5>SwitchMapData: {{SwitchMapData | json}}</h5>
+    <h5>mergeMapData returns data as received one after other: {{mergeMapData | json}}</h5>
+    <h5>concatMapData returns data as received one after other, wait for one to complete : {{concatMapData | json}}</h5>
+  </div>
+
+</div>

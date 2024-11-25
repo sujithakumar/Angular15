@@ -1,0 +1,13 @@
+
+.hiddenItem{
+    visibility: hidden;
+}
+
+.childContainer{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid grey;
+    box-shadow: 3px 2px 30px seagreen;
+    color: green;
+    font-size: 20px;
+}

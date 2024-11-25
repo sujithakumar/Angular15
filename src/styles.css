@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    margin:3%;
+    border: 3px solid brown;
+    padding : 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: transparent;
+    background-color: cornflowerblue;
+    /* box-shadow: 0px 0px 79px; */
+    margin: 10px;
+}
+
+.outletContainer{
+    margin : 20px;
+    padding:10px;
+}
+
+.updateButton{
+    margin:10px;
+    border-radius: 50%;
+}
+
+.tdbutton {
+    all: unset;
+    background-color: rgb(221, 144, 170);
+    border: 2px solid rgb(26, 5, 93);
+    margin: 5px;
+    padding: 3px;
+    font-size: 20px;
+}
+.formitem{
+    margin:30px;
+}

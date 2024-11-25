@@ -1,0 +1,38 @@
+<div class="outletContainer">
+
+    <table width="100%">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Expiry</th>
+                <th>Actions</th>
+                <th>Index</th>
+            </tr>
+        </thead>
+
+        <tbody> 
+            <tr *ngFor="let x of allFruits; index as i"  [ngClass]="{'highlight':selectedIndex==i}">
+                <td>{{x.id}}</td>
+                <td>{{x.name | titlecase}}</td>
+                <td>{{x.quantity | currency}}</td>
+                <td>{{x.price |currency}}</td>
+                <td>{{x.expiryDate |date}}</td>
+                <td>
+                    <div class="buttons">
+                        <button class="tdbutton" [routerLink]="['/edit',x.id]">Edit</button>
+                        <button class="tdbutton" (click)="deleteItem(x.id)">Delete</button>
+                    </div>
+                </td>
+                <td>
+                    <button (click)="highlight(i)">{{i}}</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
